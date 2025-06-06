@@ -1,0 +1,9 @@
+torch
+torchvision
+tqdm
+matplotlib
+requests
+beautifulsoup4
+argparse
+Pillow
+facenet-pytorch
