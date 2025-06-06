@@ -50,6 +50,6 @@ python download_face_crop.py
 您可以使用以下指令使用訓練完的模型生成圖片：
 - 需更改程式內`model_gen_path`為欲使用的模型路徑。
 ```
-python scripts/generate_image.py
+python generate_image.py
 ```
 > 會自動儲存生成圖片到`generated_images`資料夾。
