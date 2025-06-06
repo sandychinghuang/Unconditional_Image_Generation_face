@@ -1,4 +1,5 @@
-#python crawl_img_url.py --start 3650 --end 3660
+#python crawl_img_url.py --start oooo --end xxxx
+
 
 import os
 import json
