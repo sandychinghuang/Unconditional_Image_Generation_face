@@ -26,13 +26,14 @@ python scripts/download_face_crop.py
 `scripts/train_att_Res.ipynb`為模型訓練程式
 
 - 使用前須先更改`dataset_path`，請將所有訓練影像放在以下結構的資料夾中，方便`torchvision.datasets.ImageFolder`正確讀取：
+
     ```
     dataset/
     └── images/
-    ├── img1.png
-    ├── img2.png
-    ├── img3.png
-    └── ...
+        ├── img1.jpg
+        ├── img2.jpg
+        ├── img3.jpg
+        └── ...
     ```
 > 由於本專案是無條件生成任務，因此不需要真實的類別標籤，僅需確保所有圖片都在同一資料夾（例如`images/`）中即可。
 
