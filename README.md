@@ -10,7 +10,7 @@ pip install -r requirements.txt
 ## 爬蟲設置 ( dataset 準備)
 - 您可以使用以下指令，爬取 ptt beauty 版指定 idex 之所有 image 連結 ( 正文以及留言 )：
 ```
-python scripts/crawl_img_url.py --start oooo --end xxxx
+python crawl_img_url.py --start oooo --end xxxx
 ```
 > 會自動從 idex=oooo 逐漸增加至 idex=xxxx
 
@@ -19,11 +19,11 @@ python scripts/crawl_img_url.py --start oooo --end xxxx
     - 需更改`json_path`為準備爬取的 img_url 存放之 json 檔。
     - 需更改`face_crop_dir`為爬取下來之圖片存放位置。
 ```
-python scripts/download_face_crop.py
+python download_face_crop.py
 ```
 
 ## train model
-`scripts/train_att_Res.ipynb`為模型訓練程式
+`train_att_Res.ipynb`為模型訓練程式
 
 - 使用前須先更改`dataset_path`，請將所有訓練影像放在以下結構的資料夾中，方便`torchvision.datasets.ImageFolder`正確讀取：
 
@@ -52,4 +52,4 @@ python scripts/download_face_crop.py
 ```
 python scripts/generate_image.py
 ```
-> 會自動建立`generated_images`資料夾儲存生成圖片。
+> 會自動儲存生成圖片到`generated_images`資料夾。

@@ -159,7 +159,7 @@ class Diffusion_DDIM:
 # 直接生成10000張
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-model_gen_path = r"model4_att_Res/ema_unet_epoch200.pth"  #需更改為模型路徑
+model_gen_path = r"model/ema_unet_epoch200.pth"  #需更改為模型路徑
 model_gen = AttentionUNet().to(device)
 model_gen.load_state_dict(torch.load(model_gen_path))
 
