@@ -46,7 +46,7 @@ python scripts/download_face_crop.py
 
     建議 inference 使用`ema_unet_epoch{N}.pth`。
 
-## generate image
+## generate images
 您可以使用以下指令使用訓練完的模型生成圖片：
 - 需更改程式內`model_gen_path`為欲使用的模型路徑。
 ```
