@@ -13,7 +13,7 @@ pip install -r requirements.txt
 pip install facenet-pytorch
 ```
 
-因為此套件會自重新安裝`torch>=2.2.0,<2.3.0`，會和訓練、生成所需的torch版本衝突，因此處理完資料及後，訓練、生成前需重新安裝`torch`:
+因為此套件會自動重新安裝`torch>=2.2.0,<2.3.0`，和訓練、生成所需的torch版本衝突，因此處理完資料集後，訓練、生成前需重新安裝`torch`:
 ```
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
