@@ -1,11 +1,23 @@
 # Unconditional_Image_Generation_face
 ## 環境設置
-您可以使用以下指令安裝爬蟲以及訓練模型所需環境：
+您可以使用以下指令安裝爬蟲、訓練、生成模型所需環境：
 ```
 git clone https://github.com/sandychinghuang/Unconditional_Image_Generation_face.git
 cd Unconditional_Image_Generation_face
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
 ```
+
+下載圖片、裁切出人臉時，需額外用下面指令安裝`facenet-pytorch`套件:
+```
+pip install facenet-pytorch
+```
+
+因為此套件會自重新安裝`torch>=2.2.0,<2.3.0`，會和訓練、生成所需的torch版本衝突，因此處理完資料及後，訓練、生成前需重新安裝`torch`:
+```
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
+
 
 ## 爬蟲設置 ( dataset 準備)
 - 您可以使用以下指令，爬取 ptt beauty 版指定 idex 之所有 image 連結 ( 正文以及留言 )：
